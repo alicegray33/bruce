@@ -94,5 +94,5 @@ If no array merge operators are defined, arrays are merged according to the foll
 
 The array operators are further defined with examples in the [array merging documentation][array-merge].
 
-[array-merge]: https://github.com/geofffranks/spruce/blob/master/doc/array-merging.md
-[operators]:   https://github.com/geofffranks/spruce/blob/master/doc/operators.md
+[array-merge]: https://github.com/alicegray33/bruce/blob/master/doc/array-merging.md
+[operators]:   https://github.com/alicegray33/bruce/blob/master/doc/operators.md

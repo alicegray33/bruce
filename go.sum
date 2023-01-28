@@ -2,6 +2,10 @@ github.com/BurntSushi/toml v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak
 github.com/BurntSushi/toml v1.2.1/go.mod h1:CxXYINrC8qIiEnFrOxCa7Jy5BFHlXnUU2pbicEuybxQ=
 github.com/Knetic/govaluate v3.0.0+incompatible h1:7o6+MAPhYTCF0+fdvoz1xDedhRb4f6s9Tn1Tt7/WTEg=
 github.com/Knetic/govaluate v3.0.0+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
+github.com/alicegray33/simpleyaml v0.0.0-20161109204137-c9320f076de5 h1:5AjbNPs5ax5Rf1/FeG8tLUYOoEbEDvcMvBgBUH4fDRM=
+github.com/alicegray33/simpleyaml v0.0.0-20161109204137-c9320f076de5/go.mod h1:EoVmbOOR2VpnWfvsZ1wVdjvUbitLYk1SYxGTssyjW4s=
+github.com/alicegray33/simpleyaml v0.0.0-20230128160111-876bdb43f453 h1:ZuGWbzD8N7DP3ZHADvtM1/cIk3nbg7RDS7C0YP8c7G0=
+github.com/alicegray33/simpleyaml v0.0.0-20230128160111-876bdb43f453/go.mod h1:3+ueJriSgHI02rmx0yT9RdAu8Pc8ElZ8uMd51ZsNDss=
 github.com/aws/aws-sdk-go v1.40.54 h1:8zYzK8wI06G2+Bg2hwTUwzIYCCo6/Wd7lfS0G+GwqXU=
 github.com/aws/aws-sdk-go v1.40.54/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
 github.com/cloudfoundry-community/vaultkv v0.5.0 h1:QLwtzUe19guxDveA8xCoCt54/Nyqy6DGvcgmT3R7yD4=
@@ -14,8 +18,6 @@ github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/fsnotify/fsnotify v1.5.1 h1:mZcQUHVQUQWoPXXtuf9yuEXKudkV2sx1E06UadKWpgI=
-github.com/geofffranks/simpleyaml v0.0.0-20161109204137-c9320f076de5 h1:5AjbNPs5ax5Rf1/FeG8tLUYOoEbEDvcMvBgBUH4fDRM=
-github.com/geofffranks/simpleyaml v0.0.0-20161109204137-c9320f076de5/go.mod h1:EoVmbOOR2VpnWfvsZ1wVdjvUbitLYk1SYxGTssyjW4s=
 github.com/geofffranks/yaml v0.0.0-20161117152608-9f2fe4b6f295 h1:CxigGHNaNtLTrnMveo9CjJjgXTuZpbLvuOvY/+c1v8g=
 github.com/geofffranks/yaml v0.0.0-20161117152608-9f2fe4b6f295/go.mod h1:+Qu4YOxbpR+Dn8JVzOTjJKWt3EZkEQD918wX+CkNcbE=
 github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0/go.mod h1:fyg7847qk6SyHyPtNmDHnmrv/HOrqktSC+C9fM+CJOE=

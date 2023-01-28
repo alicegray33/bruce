@@ -7,7 +7,7 @@ import (
 	"github.com/starkandwayne/goutils/ansi"
 	"github.com/starkandwayne/goutils/tree"
 
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce/log"
 )
 
 // JoinOperator is invoked with (( join <separator> <lists/strings>... )) and

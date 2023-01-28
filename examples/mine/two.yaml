@@ -1,0 +1,9 @@
+settings:
+  drive: 
+    colour: red
+    model: green
+  food: 
+    temperature: 200
+    best: yes
+  apple: yes
+advice: 2

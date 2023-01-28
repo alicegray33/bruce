@@ -8,7 +8,7 @@ import (
 
 	"github.com/starkandwayne/goutils/tree"
 
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce/log"
 )
 
 // IpOperator...
@@ -49,18 +49,18 @@ func (IpsOperator) Dependencies(_ *Evaluator, args []*Expr, locs []*tree.Cursor,
 }
 
 func makeInt(val interface{}) int {
-	var num int;
+	var num int
 
 	num, ok := val.(int)
 	if !ok {
-	  num = int(val.(int64))
+		num = int(val.(int64))
 	}
 	return num
 }
 
 func netSize(ipnet *net.IPNet) int {
 	ones, bits := ipnet.Mask.Size()
-	return 1<<uint(bits-ones)
+	return 1 << uint(bits-ones)
 }
 
 func abs(n int) int {
@@ -75,7 +75,7 @@ func (IpsOperator) Run(ev *Evaluator, args []*Expr) (*Response, error) {
 	DEBUG("running (( ips ... )) operation at $.%s", ev.Here)
 	defer DEBUG("done with (( ips ... )) operation at $%s\n", ev.Here)
 
-	if (len(args) < 2) {
+	if len(args) < 2 {
 		return nil, fmt.Errorf("ips requires at least two arguments: 1) An IP or a CIDR and 2) an index")
 	}
 
@@ -114,9 +114,9 @@ func (IpsOperator) Run(ev *Evaluator, args []*Expr) (*Response, error) {
 	ip, ipnet, err := net.ParseCIDR(vals[0].(string))
 	if err != nil {
 		ip = net.ParseIP(vals[0].(string))
-	  if ip == nil {
-		DEBUG("     [n]: failed to parse IP or CIDR \"%s\": %s", vals[0], err)
-		return nil, err
+		if ip == nil {
+			DEBUG("     [n]: failed to parse IP or CIDR \"%s\": %s", vals[0], err)
+			return nil, err
 		}
 	}
 
@@ -134,8 +134,6 @@ func (IpsOperator) Run(ev *Evaluator, args []*Expr) (*Response, error) {
 		}
 	}
 
-
-
 	if len(args) == 2 {
 		return &Response{
 			Type:  Replace,
@@ -144,12 +142,12 @@ func (IpsOperator) Run(ev *Evaluator, args []*Expr) (*Response, error) {
 	} else {
 		count := makeInt(vals[2])
 		if ipnet != nil {
-			if start + count > netSize(ipnet) {
-			  return nil, fmt.Errorf("Start index %d and count %d would exceed size of subnet %s", start, count, vals[0])
+			if start+count > netSize(ipnet) {
+				return nil, fmt.Errorf("Start index %d and count %d would exceed size of subnet %s", start, count, vals[0])
 			}
 		}
 		lst := []interface{}{}
-		for i := start; i < start + count; i++ {
+		for i := start; i < start+count; i++ {
 			lst = append(lst, netaddr.IPAdd(ip, i).String())
 		}
 		return &Response{

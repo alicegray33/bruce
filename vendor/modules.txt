@@ -5,6 +5,9 @@ github.com/BurntSushi/toml/internal
 # github.com/Knetic/govaluate v3.0.0+incompatible
 ## explicit
 github.com/Knetic/govaluate
+# github.com/alicegray33/simpleyaml v0.0.0-20230128160111-876bdb43f453
+## explicit
+github.com/alicegray33/simpleyaml
 # github.com/aws/aws-sdk-go v1.40.54
 ## explicit; go 1.11
 github.com/aws/aws-sdk-go/aws
@@ -57,9 +60,6 @@ github.com/cloudfoundry-community/vaultkv
 # github.com/cppforlife/go-patch v0.2.0
 ## explicit
 github.com/cppforlife/go-patch/patch
-# github.com/geofffranks/simpleyaml v0.0.0-20161109204137-c9320f076de5
-## explicit
-github.com/geofffranks/simpleyaml
 # github.com/geofffranks/yaml v0.0.0-20161117152608-9f2fe4b6f295
 ## explicit
 github.com/geofffranks/yaml

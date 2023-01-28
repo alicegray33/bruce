@@ -40,4 +40,4 @@ In the above example, there was a path in the Vault `secret` backend of
 `secret/my/credentials/admin`. That path contained two keys `username`,
 and `password`, set to `adminUserNamePulledFromVault`, and `thisPasswordWasPulledFromVault`.
 
-[operator-docs]:        https://github.com/geofffranks/spruce/blob/master/doc/operators.md#-vault-
+[operator-docs]:        https://github.com/alicegray33/bruce/blob/master/doc/operators.md#-vault-

@@ -2,8 +2,8 @@ FROM golang:1.18-alpine AS go
 
 FROM go AS build
 RUN apk --no-cache add git
-COPY . /go/src/github.com/geofffranks/spruce
-RUN cd /go/src/github.com/geofffranks/spruce && \
+COPY . /go/src/github.com/alicegray33/bruce
+RUN cd /go/src/github.com/alicegray33/bruce && \
     CGOENABLED=0 go build \
        -o /usr/bin/spruce \
        -ldflags "-s -w -extldflags '-static' -X main.Version=$( (git describe --tags 2>/dev/null || (git rev-parse HEAD | cut -c-8)) | sed 's/^v//' )" \

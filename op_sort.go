@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce/log"
 	"github.com/starkandwayne/goutils/tree"
 )
 

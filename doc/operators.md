@@ -391,8 +391,8 @@ time base64 encoding of string literals specified directly, or by reference.
 
 [Example][base64-example]
 
-[array-merging]:      https://github.com/geofffranks/spruce/blob/master/doc/array-merging.md
-[env-var]:            https://github.com/geofffranks/spruce/blob/master/doc/environment-variables-and-defaults.md
+[array-merging]:      https://github.com/alicegray33/bruce/blob/master/doc/array-merging.md
+[env-var]:            https://github.com/alicegray33/bruce/blob/master/doc/environment-variables-and-defaults.md
 [vault]:              https://vaultproject.io
 [go-patch]:           https://github.com/cppforlife/go-patch
 [awsparamstore]:      https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
@@ -411,7 +411,7 @@ time base64 encoding of string literals specified directly, or by reference.
 [prune-example]:      http://play.spruce.cf/#ce52f99a0c7470aa2a1e8fd4dddbafff
 [static_ips-example]: http://play.spruce.cf/#ce52f99a0c7470aa2a1e8fd4dddbafff
 [stringify-example]:  https://play.spruce.cf/#f302027e6a6d6f77c04437d18a420db0
-[vault-example]:      https://github.com/geofffranks/spruce/blob/master/doc/pulling-creds-from-vault.md
+[vault-example]:      https://github.com/alicegray33/bruce/blob/master/doc/pulling-creds-from-vault.md
 [ips-example]:        https://spruce.cf/#568526af82aec5448ddf34740dbd70a3
 [awsparam-example]:   values-from-aws-parameter-store.md
 [awssecret-example]:  values-from-aws-secrets-manager.md

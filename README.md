@@ -29,8 +29,8 @@ Alternatively, you can download a [prebuilt binaries for 64-bit Linux, or Mac OS
 ## How do I compile from source?
 
 1. [Install Go][install-go], e.g. on Ubuntu `sudo snap install --classic go`
-1. Fetch sources via `go get github.com/geofffranks/spruce`
-1. Change current directory to the source root `cd ~/go/src/github.com/geofffranks/spruce/`
+1. Fetch sources via `go get github.com/alicegray33/bruce`
+1. Change current directory to the source root `cd ~/go/src/github.com/alicegray33/bruce/`
 1. Compile and execute tests `make all`
 
 ## A Quick Example
@@ -109,15 +109,15 @@ Licensed under [the MIT License][license]
 [slack-channel]:        https://cloudfoundry.slack.com/messages/spruce/
 [slack-badge]:          http://slack.cloudfoundry.org/badge.svg
 [dry-definition]:       https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
-[releases]:             https://github.com/geofffranks/spruce/releases/
-[operator-docs]:        https://github.com/geofffranks/spruce/blob/master/doc/operators.md
-[merge-semantics]:      https://github.com/geofffranks/spruce/blob/master/doc/merging.md
-[array-merge]:          https://github.com/geofffranks/spruce/blob/master/doc/array-merging.md
-[env-var-defaults]:     https://github.com/geofffranks/spruce/blob/master/doc/environment-variables-and-defaults.md
-[go-patch-support]:     https://github.com/geofffranks/spruce/blob/master/doc/merging-go-patch-files.md
-[credhub-support]:      https://github.com/geofffranks/spruce/blob/master/doc/integrating-with-credhub.md
-[vault-support]:        https://github.com/geofffranks/spruce/blob/master/doc/pulling-creds-from-vault.md
-[defer]:                https://github.com/geofffranks/spruce/blob/master/doc/generating-spruce-with-spruce.md
-[cloud-config-support]: https://github.com/geofffranks/spruce/blob/master/doc/integrating-with-cloud-config.md
-[license]:              https://github.com/geofffranks/spruce/blob/master/LICENSE
+[releases]:             https://github.com/alicegray33/bruce/releases/
+[operator-docs]:        https://github.com/alicegray33/bruce/blob/master/doc/operators.md
+[merge-semantics]:      https://github.com/alicegray33/bruce/blob/master/doc/merging.md
+[array-merge]:          https://github.com/alicegray33/bruce/blob/master/doc/array-merging.md
+[env-var-defaults]:     https://github.com/alicegray33/bruce/blob/master/doc/environment-variables-and-defaults.md
+[go-patch-support]:     https://github.com/alicegray33/bruce/blob/master/doc/merging-go-patch-files.md
+[credhub-support]:      https://github.com/alicegray33/bruce/blob/master/doc/integrating-with-credhub.md
+[vault-support]:        https://github.com/alicegray33/bruce/blob/master/doc/pulling-creds-from-vault.md
+[defer]:                https://github.com/alicegray33/bruce/blob/master/doc/generating-spruce-with-spruce.md
+[cloud-config-support]: https://github.com/alicegray33/bruce/blob/master/doc/integrating-with-cloud-config.md
+[license]:              https://github.com/alicegray33/bruce/blob/master/LICENSE
 [install-go]:           https://golang.org/doc/install

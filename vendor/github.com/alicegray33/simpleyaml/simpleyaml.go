@@ -1,32 +1,33 @@
 // a Go package to interact with arbitrary YAML.
 //
 // Example:
-//      var data = []byte(`
-//      name: smallfish
-//      age: 99
-//      bool: true
-//      bb:
-//          cc:
-//              dd:
-//                  - 111
-//                  - 222
-//                  - 333
-//      `
 //
-//      y, err := simpleyaml.NewYaml(data)
-//      if err != nil {
-//      	// ERROR
-//      }
+//	var data = []byte(`
+//	name: smallfish
+//	age: 99
+//	bool: true
+//	bb:
+//	    cc:
+//	        dd:
+//	            - 111
+//	            - 222
+//	            - 333
+//	`
 //
-//      if v, err := y.Get("name").String(); err == nil {
-//      	fmt.Println("value:", v)
-//      }
+//	y, err := simpleyaml.NewYaml(data)
+//	if err != nil {
+//		// ERROR
+//	}
 //
-//      // y.Get("age").Int()
-//      // y.Get("bool").Bool()
-//      // y.Get("bb").Get("cc").Get("dd").Array()
-//      // y.Get("bb").Get("cc").Get("dd").GetIndex(1).Int()
-//      // y.GetPath("bb", "cc", "ee").String()
+//	if v, err := y.Get("name").String(); err == nil {
+//		fmt.Println("value:", v)
+//	}
+//
+//	// y.Get("age").Int()
+//	// y.Get("bool").Bool()
+//	// y.Get("bb").Get("cc").Get("dd").Array()
+//	// y.Get("bb").Get("cc").Get("dd").GetIndex(1).Int()
+//	// y.GetPath("bb", "cc", "ee").String()
 package simpleyaml
 
 import (
@@ -41,7 +42,7 @@ type Yaml struct {
 
 // NewYaml returns a pointer to a new `Yaml` object after unmarshaling `body` bytes
 func NewYaml(body []byte) (*Yaml, error) {
-	var val interface{}
+	val := yaml.MapSlice{}
 	err := yaml.Unmarshal(body, &val)
 	if err != nil {
 		return nil, errors.New("unmarshal []byte to yaml failed: " + err.Error())
@@ -52,7 +53,8 @@ func NewYaml(body []byte) (*Yaml, error) {
 // Get returns a pointer to a new `Yaml` object for `key` in its `map` representation
 //
 // Example:
-//      y.Get("xx").Get("yy").Int()
+//
+//	y.Get("xx").Get("yy").Int()
 func (y *Yaml) Get(key string) *Yaml {
 	m, err := y.Map()
 	if err == nil {
@@ -66,7 +68,8 @@ func (y *Yaml) Get(key string) *Yaml {
 // GetPath searches for the item as specified by the branch
 //
 // Example:
-//      y.GetPath("bb", "cc").Int()
+//
+//	y.GetPath("bb", "cc").Int()
 func (y *Yaml) GetPath(branch ...string) *Yaml {
 	yin := y
 	for _, p := range branch {
@@ -87,7 +90,8 @@ func (y *Yaml) Array() ([]interface{}, error) {
 // for `index` in its `array` representation
 //
 // Example:
-//      y.Get("xx").GetIndex(1).String()
+//
+//	y.Get("xx").GetIndex(1).String()
 func (y *Yaml) GetIndex(index int) *Yaml {
 	a, err := y.Array()
 	if err == nil {

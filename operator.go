@@ -9,7 +9,7 @@ import (
 	"github.com/geofffranks/yaml"
 	"github.com/starkandwayne/goutils/ansi"
 
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce/log"
 	"github.com/starkandwayne/goutils/tree"
 )
 

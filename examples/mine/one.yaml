@@ -1,0 +1,9 @@
+settings:
+  drive: 
+    seats: false
+    belt: optional
+  food: 
+    cooked: sometimes
+    amount: 1
+  apple: yes
+advice: 2

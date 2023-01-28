@@ -14,14 +14,14 @@ import (
 	"github.com/mattn/go-isatty"
 	"github.com/starkandwayne/goutils/ansi"
 
-	. "github.com/geofffranks/spruce"
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce"
+	. "github.com/alicegray33/bruce/log"
 
 	"strings"
 
 	// Use geofffranks forks to persist the fix in https://github.com/go-yaml/yaml/pull/133/commits
 	// Also https://github.com/go-yaml/yaml/pull/195
-	"github.com/geofffranks/simpleyaml"
+	"github.com/alicegray33/simpleyaml"
 	"github.com/geofffranks/yaml"
 	"github.com/voxelbrain/goptions"
 )
@@ -125,7 +125,6 @@ func main() {
 			exit(2)
 			return
 		}
-
 		TRACE("Converting the following data back to YML:")
 		TRACE("%#v", tree)
 		merged, err := yaml.Marshal(tree)
@@ -229,14 +228,12 @@ func parseYAML(data []byte) (map[interface{}]interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	if empty_y, _ := simpleyaml.NewYaml([]byte{}); *y == *empty_y {
 		DEBUG("YAML doc is empty, creating empty hash/map")
 		return make(map[interface{}]interface{}), nil
 	}
 
 	doc, err := y.Map()
-
 	if err != nil {
 		if _, arrayErr := y.Array(); arrayErr == nil {
 			return nil, RootIsArrayError{msg: ansi.Sprintf("@R{Root of YAML document is not a hash/map}: %s\n", err)}

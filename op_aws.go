@@ -15,7 +15,7 @@ import (
 
 	"github.com/starkandwayne/goutils/ansi"
 
-	. "github.com/geofffranks/spruce/log"
+	. "github.com/alicegray33/bruce/log"
 	"github.com/starkandwayne/goutils/tree"
 
 	// Use geofffranks forks to persist the fix in https://github.com/go-yaml/yaml/pull/133/commits

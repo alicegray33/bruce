@@ -1,4 +1,4 @@
-module github.com/geofffranks/spruce
+module github.com/alicegray33/bruce
 
 go 1.18
 
@@ -7,7 +7,6 @@ require (
 	github.com/aws/aws-sdk-go v1.40.54
 	github.com/cloudfoundry-community/vaultkv v0.5.0
 	github.com/cppforlife/go-patch v0.2.0
-	github.com/geofffranks/simpleyaml v0.0.0-20161109204137-c9320f076de5
 	github.com/geofffranks/yaml v0.0.0-20161117152608-9f2fe4b6f295
 	github.com/gonvenience/ytbx v1.4.4
 	github.com/homeport/dyff v1.5.6
@@ -20,6 +19,7 @@ require (
 
 require (
 	github.com/BurntSushi/toml v1.2.1 // indirect
+	github.com/alicegray33/simpleyaml v0.0.0-20230128160111-876bdb43f453 // indirect
 	github.com/gonvenience/bunt v1.3.4 // indirect
 	github.com/gonvenience/neat v1.3.11 // indirect
 	github.com/gonvenience/term v1.0.2 // indirect
